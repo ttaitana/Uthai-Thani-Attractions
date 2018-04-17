@@ -1,42 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Travel</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/markup.css">
-    <link rel="stylesheet" href="js/bootstrap.js">
-    <link rel="stylesheet" href="js/markup.js">
-    <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/index.css">
+  <title> Uthai thani </title>
 </head>
 <body>
+  
+  <nav class="navbar">
+    <ul>
+      <li class="nav-tp"><a href="#about">about</a></li>
+      <li class="nav-tp"><a href="#attractions">attractions</a></li>
+      <li class="nav-tp"><a href="#">something</a></li>
+      <li class="nav-tp"><a href="#">another thing</a></li>
+    </ul>
+  </nav>
+  <div class="welcome">
+    <h1 id="logo">Hello Uthai</h1>
+  </div>
 
-    <nav class="Navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li id="Choice"><a href="#">About</a></li>
-            <li id="Choice"><a href="#">Attractions</a></li>
-            <li id="Choice"><a href="#">Food</a></li>
-            <li id="Choice"><a href="#">Contract</a></li>
-        </ul>
-    </nav>
+  <div class="container-fulid" id="about">
+    <div class="row">
+      <div class="col" id="view1">
+      </div>
 
-    <video autoplay muted loop id="BGVideo">
-        <source src="video/Top_Highway.mp4" type="video/mp4">
-    </video>
-    
-    <section class="Header">
-    <div class="Text-Header">
-        <h1>Uthai Thani</h1>
-        <p>อุทัยธานี จังหวัดนี้มีดรอย่างไร เรามีคำตอบให้คุณ</p>
+      <div class="col" id="view2">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime necessitatibus magni mollitia ipsum, fuga nemo animi, eos reprehenderit consequuntur sunt. Fugit sequi cupiditate, molestias qui excepturi officiis, sit nesciunt optio.</p>
+
+      </div>
     </div>
-    </section>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+  <div class="container-fulid" id="attractions">
+    <h1>attractions</h1>
+    <div class="row">
+      <div class="col">
+        <img src="pic/pic1.jpg" alt="" class="img">
+      </div>
+      <div class="col">
+        <img src="pic/pic2.jpg" alt="" class="img">
+      </div>
+
+      <div class="w-100"></div>
+
+      <div class="col">
+        <img src="pic/pic3.jpg" alt="" class="img">
+      </div>
+      <div class="col">
+        <img src="pic/pic4.jpg" alt="" class="img">
+      </div>
+    </div>
+  </div>
+<!-- 
+  <div class="footer">
+    <h1>This is a Footer get it?</h1>
+  </div>
+ -->
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <script src="js/markup.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
