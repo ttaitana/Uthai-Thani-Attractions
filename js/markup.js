@@ -11,18 +11,12 @@ $(document).ready(function(){
           $("#Logo").attr('src', 'pic/logo-white.png');
           $(".navbar").css("top", "0");
         } else {
-          //welcome page
-          // $(".navbar").css("background-color", "transparent");
-          // $(".navbar a").css("color", "#F8F9FA");
-          // $("#Logo").attr('src', 'pic/logo.png');
-
           $(".navbar").css("top", "-100px");
         }
       });
     });
 
-$('.navbar a').smoothScroll({
-  autoFocus: true
-});
 
-//click to change element
+//click to flip
+
+
