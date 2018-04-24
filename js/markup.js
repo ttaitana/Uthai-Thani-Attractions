@@ -7,7 +7,7 @@ $(document).ready(function(){
 //navbar hiding
 $(document).ready(function(){
       $(window).scroll(function() {
-        if ($(document).scrollTop() > 800) {
+        if ($(document).scrollTop() > 700) {
           $(".navbar").css("background-color", "#2A2D34");
           $(".navbar a").css("color", "#E8F1F2");
           $("#Logo").attr('src', 'pic/logo-white.png');
@@ -38,7 +38,7 @@ $(document).ready(function(){
     $(".att-img img").css("opacity", '.5');
   },
   function(){
-    $("#description h1").css("transform", "translateY(-10vh)");
+    $("#description h1").css("transform", "translateY(-13vh)");
     $("#description p").css("transform", "translateY(80vh)");
     $(".att-img img").css("opacity", '1');
   });
@@ -50,7 +50,7 @@ $(document).ready(function(){
     $(".att-img2 img").css("opacity", '.5');
   },
   function(){
-    $("#description2 h1").css("transform", "translateY(-90vh)");
+    $("#description2 h1").css("transform", "translateY(-100vh)");
     $("#description2 p").css("transform", "translateY(-10vh)");
     $(".att-img2 img").css("opacity", '1');
   });
@@ -62,12 +62,10 @@ $(document).ready(function(){
     $(".att-img3 img").css("opacity", '.5');
   },
   function(){
-    $("#description3 h1").css("transform", "translateY(-70vh)");
+    $("#description3 h1").css("transform", "translateY(-75vh)");
     $("#description3 p").css("transform", "translateY(10vh)");
     $(".att-img3 img").css("opacity", '1');
   });
 });
 
 //click to flip
-
-
