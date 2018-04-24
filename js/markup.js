@@ -3,6 +3,8 @@ $(document).ready(function(){
     $(this).scrollTop(0);
 });
 
+
+//navbar hiding
 $(document).ready(function(){
       $(window).scroll(function() {
         if ($(document).scrollTop() > 800) {
@@ -16,7 +18,20 @@ $(document).ready(function(){
       });
     });
 
+
+//smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 $(document).ready(function(){
+  //1st place
   $("#place1").hover(function(){
     $("#description h1").css("transform", "translateY(6vh)");
     $("#description p").css("transform", "translateY(45vh)");
@@ -28,7 +43,7 @@ $(document).ready(function(){
     $(".att-img img").css("opacity", '1');
   });
 
-
+  //2nd place
   $("#place2").hover(function(){
     $("#description2 h1").css("transform", "translateY(-74vh)");
     $("#description2 p").css("transform", "translateY(-35vh)");
@@ -38,6 +53,18 @@ $(document).ready(function(){
     $("#description2 h1").css("transform", "translateY(-90vh)");
     $("#description2 p").css("transform", "translateY(-10vh)");
     $(".att-img2 img").css("opacity", '1');
+  });
+
+  //3rd place
+  $("#place3").hover(function(){
+    $("#description3 h1").css("transform", "translateY(-53vh)");
+    $("#description3 p").css("transform", "translateY(-15vh)");
+    $(".att-img3 img").css("opacity", '.5');
+  },
+  function(){
+    $("#description3 h1").css("transform", "translateY(-70vh)");
+    $("#description3 p").css("transform", "translateY(10vh)");
+    $(".att-img3 img").css("opacity", '1');
   });
 });
 
