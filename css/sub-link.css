@@ -1,0 +1,58 @@
+@font-face{
+    font-family: EkkamaiStandard;
+    scr:url("../font/EkkamaiStandard-Light.ttf");
+}
+
+@font-face{
+    font-family: ItalianBreakfast;
+    src:url("../font/ItalianBreakfast-Regular.ttf");
+}
+
+@font-face {
+  font-family: Fontcraft;
+  src: url("../font/Fontcraft.otf") format("opentype");
+}
+.header{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+.header h1{
+  padding-top: 50vh;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 10em;
+  font-family: Fontcraft;
+  z-index: 1;
+}
+#Header-text{
+  opacity: 0;
+}
+.parallax {
+  display: none;
+  background-image: url("../pic/หุบป่าตาด1.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
+/* .header img{
+  width: 100%;
+  height: auto;
+  transform: translateY(-8vw);
+  opacity: .5;
+} */
+
+
+
+.information{
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  z-index: 3;
+}

@@ -16,6 +16,7 @@ $(document).ready(function(){
           $(".navbar").css("top", "-100px");
         }
       });
+
     });
 
 
@@ -67,5 +68,3 @@ $(document).ready(function(){
     $(".att-img3 img").css("opacity", '1');
   });
 });
-
-//click to flip
