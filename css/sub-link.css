@@ -10,13 +10,15 @@
 
 @font-face {
   font-family: Fontcraft;
-  src: url("../font/Fontcraft.otf") format("opentype");
+  src: url("../font/Fontcraft Ver 2.02.ttf");
 }
+
 .header{
   height: 100vh;
   width: 100%;
   overflow: hidden;
   background-color: black;
+  text-align: center;
 }
 .header h1{
   padding-top: 50vh;
@@ -33,7 +35,7 @@
 }
 .parallax {
   display: none;
-  background-image: url("../pic/หุบป่าตาด1.jpg");
+  background-image: url("../pic/ถ้ำพุหวาย.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -41,18 +43,73 @@
   background-size: cover;
   opacity: .5;
 }
-/* .header img{
-  width: 100%;
-  height: auto;
-  transform: translateY(-8vw);
+
+.parallax2 {
+  display: none;
+  background-image: url("../pic/วัดท่าซุง.jpeg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: .5;
-} */
+}
+
+.parallax3 {
+  display: none;
+  background-image: url("../pic/วัดถ้ำเขาวง.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
 
 
 
 .information{
+  font-family:Fontcraft;
+  font-size: 150%;
+  padding: 20px 200px 20px 200px;
   width: 100%;
-  height: 15vh;
+  height: auto;
   background-color: white;
   z-index: 3;
+}
+.information p{
+  padding-top: 15px;
+}
+.information h1{
+  font-size: 200%;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+
+button {
+  outline:none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius:40px;
+  background: #fff;
+  border: 2px solid #1ECD97;
+  color: #1ECD97;
+  letter-spacing:1px;
+  text-shadow:0;
+  cursor: pointer;
+  transition: .5s all ease;
+}
+
+button:hover{
+  background: #1ECD97;
+  color: #fff;
 }

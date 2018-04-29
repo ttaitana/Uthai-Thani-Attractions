@@ -1,16 +1,10 @@
-//refresh debug navbar
-$(document).ready(function(){
-    $(this).scrollTop(0);
-});
-
-
 //navbar hiding
 $(document).ready(function(){
       $(window).scroll(function() {
         if ($(document).scrollTop() > 700) {
-          $(".navbar").css("background-color", "#2A2D34");
-          $(".navbar a").css("color", "#E8F1F2");
-          $("#Logo").attr('src', 'pic/logo-white.png');
+          $(".navbar").css("background-color", "#fff");//#2A2D34
+          $(".navbar a").css("color", "#0D1D3A");
+          $("#Logo").attr('src', 'pic/logo.png');
           $(".navbar").css("top", "0");
         } else {
           $(".navbar").css("top", "-100px");
@@ -18,7 +12,6 @@ $(document).ready(function(){
       });
 
     });
-
 
 //smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -35,7 +28,7 @@ $(document).ready(function(){
   //1st place
   $("#place1").hover(function(){
     $("#description h1").css("transform", "translateY(6vh)");
-    $("#description p").css("transform", "translateY(45vh)");
+    $("#description p").css("transform", "translateY(44vh)");
     $(".att-img img").css("opacity", '.5');
   },
   function(){
@@ -47,7 +40,7 @@ $(document).ready(function(){
   //2nd place
   $("#place2").hover(function(){
     $("#description2 h1").css("transform", "translateY(-74vh)");
-    $("#description2 p").css("transform", "translateY(-35vh)");
+    $("#description2 p").css("transform", "translateY(-40vh)");
     $(".att-img2 img").css("opacity", '.5');
   },
   function(){
@@ -58,13 +51,13 @@ $(document).ready(function(){
 
   //3rd place
   $("#place3").hover(function(){
-    $("#description3 h1").css("transform", "translateY(-53vh)");
-    $("#description3 p").css("transform", "translateY(-15vh)");
+    $("#description3 h1").css("transform", "translateY(-74vh)");
+    $("#description3 p").css("transform", "translateY(-36vh)");
     $(".att-img3 img").css("opacity", '.5');
   },
   function(){
-    $("#description3 h1").css("transform", "translateY(-75vh)");
-    $("#description3 p").css("transform", "translateY(10vh)");
+    $("#description3 h1").css("transform", "translateY(-100vh)");
+    $("#description3 p").css("transform", "translateY(-10vh)");
     $(".att-img3 img").css("opacity", '1');
   });
 });

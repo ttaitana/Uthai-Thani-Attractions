@@ -10,12 +10,12 @@
 
 @font-face {
   font-family: Fontcraft;
-  src: url("../font/Fontcraft.otf") format("opentype");
+  src: url("../font/Fontcraft Ver 2.02.ttf");
 }
 
 p{
   font-family: Fontcraft;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .navbar{
@@ -28,6 +28,7 @@ p{
     transition: .2s;
     /*background-color:#F8F9FA;*/
     background-color: transparent;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
 }
 
 .navbar ul{
@@ -135,7 +136,7 @@ p{
 }
 
 #about{
-    background-color: #F8F9FA;
+    background-color: #FFF;
 }
 
 #view2{
@@ -157,7 +158,7 @@ p{
 #attractions{
     height: 110vh;
     width: 100%;
-    background-color: #F8F9FA;
+    background-color: #FFF;
     /* background-color: red; */
 }
 
@@ -191,7 +192,7 @@ p{
     padding: 0;
     height: 100vh;
     width: 100%;
-    background-color: gray;
+    background-color: #FFF;
 }
 
 #mapping{
@@ -210,13 +211,13 @@ p{
 
 
 #place1{
-    box-shadow: 10px 15px 20px rgb(0, 0, 0, .4);
+      box-shadow: 5px 10px 20px rgb(0, 0, 0, .4);
 }
 #place2{
-    box-shadow: 0px 15px 20px rgb(0, 0, 0, .4);
+      box-shadow: 0px 10px 20px rgb(0, 0, 0, .4);
 }
 #place3{
-    box-shadow: -10px 15px 20px rgb(0, 0, 0, .4);
+      box-shadow: -5px 10px 20px rgb(0, 0, 0, .4);
 }
 
 .button5 {
@@ -232,8 +233,8 @@ p{
 }
 
 .button5:hover{
-  color: #F3A712;
-  background-color: black;
+  color: black;
+  background-color: #F3A712;
   border: 3px solid #F3A712;
 }
 
@@ -259,7 +260,7 @@ p{
 
 #description p{
     color: #F7F7F7;
-    font-size: 120%;
+    font-size: 150%;
     text-align: center;
     transform: translateY(80vh);
     transition: .5s;
@@ -288,6 +289,17 @@ p{
     transition: .5s;
 }
 
+.att-img3{
+    height: 100%;
+    width: auto;
+}
+.att-img3 img{
+    height: 100%;
+    width: auto;
+    transform: translate(-15vw);
+    transition: .5s;
+}
+
 #description2{
     width: 100%;
     height: 100%;
@@ -304,7 +316,29 @@ p{
 }
 #description2 p{
     color: #F7F7F7;
-    font-size: 120%;
+    font-size: 150%;
+    text-align: center;
+    transform: translateY(-10vh);
+    transition: .5s;
+}
+
+#description3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    transition: .5s;
+}
+
+#description3 h1{
+    transform: translateY(-100vh);
+    color: #F7F7F7;
+    transition: .5s;
+}
+#description3 p{
+    color: #F7F7F7;
+    font-size: 150%;
     text-align: center;
     transform: translateY(-10vh);
     transition: .5s;
@@ -315,28 +349,6 @@ p{
     height: 100%;
     width: auto;
     transform: translate(-15vw);
-    transition: .5s;
-}
-
-#description3{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: block;
-    z-index: 2;
-    transition: .5s;
-    transform: translateY(-50vh);
-}
-#description3 h1{
-    transform: translateY(-75vh);
-    color: #F7F7F7;
-    transition: .5s;
-}
-#description3 p{
-    color: #F7F7F7;
-    font-size: 120%;
-    text-align: center;
-    transform: translateY(10vh);
     transition: .5s;
 }
 
