@@ -12,6 +12,12 @@
   font-family: Fontcraft;
   src: url("../font/Fontcraft Ver 2.02.ttf");
 }
+
+@font-face {
+  font-family: Anchan;
+  src: url("../font/Anchan.ttf");
+}
+
 body{
   font-family:Fontcraft;
 }

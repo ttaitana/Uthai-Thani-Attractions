@@ -13,6 +13,12 @@
   src: url("../font/Fontcraft Ver 2.02.ttf");
 }
 
+@font-face {
+  font-family: Anchan;
+  src: url("../font/Anchan.ttf");
+}
+
+
 p{
   font-family: Fontcraft;
   font-size: 1.8em;
@@ -109,7 +115,7 @@ p{
 
 #logo{
     margin-bottom: 29vh;
-    font-family: ItalianBreakfast;
+    font-family: Anchan;
     padding-top: 38vh;
     font-size: 10em;
     color: #F7F7F7;
