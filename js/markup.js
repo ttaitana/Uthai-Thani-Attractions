@@ -1,14 +1,6 @@
-//navbar hiding
+// ===================================== copy zone =======================================================\\
 $(document).ready(function(){
-        if ($(document).scrollTop() > 500) {
-          $(".navbar").css("background-color", "#fff");
-          $(".navbar a").css("color", "#0D1D3A");
-          $("#Logo").attr('src', 'pic/logo.png');
-          $(".navbar").css("top", "0");
-        } else {
-          $(".navbar").css("top", "-100px");
-        }
-
+        /*Smooth scrolling*/
         // Select all links with hashes
         $('a[href*="#"]')
           // Remove links that don't actually link to anything
@@ -46,20 +38,21 @@ $(document).ready(function(){
             }
           });
 });
-
-
-//smooth scrolling
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
+// ===================================== copy zone ======================================================\\
 
 $(document).ready(function(){
   $(window).scroll(function(){
+    //navbar hiding
+    if ($(document).scrollTop() > 500) {
+      $(".navbar").css("background-color", "#fff");
+      $(".navbar a").css("color", "#0D1D3A");
+      $("#Logo").attr('src', 'pic/logo.png');
+      $(".navbar").css("top", "0");
+    } else {
+      $(".navbar").css("top", "-100px");
+    }
+
+    //appearing
     $(".appear").each(function(){
       let bottom_of_object = $(this).offset().top + $(this).outerHeight();
       let bottom_of_window = $(window).scrollTop() + $(window).height();
