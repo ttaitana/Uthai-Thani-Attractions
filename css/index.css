@@ -145,8 +145,13 @@ p{
     background-color: #FFF;
 }
 
+.slogan{
+  width: 100%;
+  text-align: center;
+}
+
 #view2{
-    height: 100vh;
+    height: 65vh;
     width: 80%;
     padding-right: 0;
     margin-left: 19%;
