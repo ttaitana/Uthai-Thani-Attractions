@@ -23,6 +23,9 @@ p{
   font-family: Fontcraft;
   font-size: 1.8em;
 }
+.appear{
+    opacity: 0;
+}
 
 .navbar{
     top: -100px;
