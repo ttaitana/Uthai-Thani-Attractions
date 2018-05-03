@@ -15,11 +15,11 @@ $(document).ready(function(){
     }
     if($("#snd").is(":hidden")){
       $("#snd").show();
-      $("#fst").text("ดูชั้นก่อนหน้า");
-      $("#snd").text("ดูชั้นต่อไป");
+      $("#fst").text("ดูหน้าก่อนหน้า");
+      $("#snd").text("ดูหน้าต่อไป");
     }
     else if(i == 2){
-      $("#fst").text("ดูข้อมูลแต่ละชั้น");
+      $("#fst").text("ดูหน้าต่อไป");
       $("#snd").hide();
     }
     i = i - 1;
@@ -30,7 +30,7 @@ $(document).ready(function(){
   $("#snd").click(function(){
     if(i == 3){
       $("#snd").hide();
-      $("#fst").text("ดูชั้นก่อนหน้า");
+      $("#fst").text("ดูหน้าก่อนหน้า");
     }
     i = i + 1;
     pos = pos - 1765;

@@ -1,3 +1,11 @@
+/* ============color==========
+  Green : #4C9F70
+  Greeener : #496F5D
+  black : #0B0A07
+  blue : #6290C3
+  orange : #F3A712
+*/
+
 @font-face{
     font-family: EkkamaiStandard;
     scr:url("../font/EkkamaiStandard-Light.ttf");
@@ -18,10 +26,17 @@
   src: url("../font/Anchan.ttf");
 }
 
+body{
+  font-family: Fontcraft;
+}
 
 p{
-  font-family: Fontcraft;
   font-size: 1.8em;
+}
+hr{
+  border-width: 4px;
+  background-color: #4C9F70;
+  opacity: .6;
 }
 .appear{
     opacity: 0;
@@ -54,12 +69,10 @@ p{
     display: inline-block;
     transition: .5s;
 }
-
 .navbar a:hover{
     /*background-color: #141416;*/
-    color: #F3A712 !important;
+    color: #1049CE !important;
 }
-
 .navbar a{
   font-family: Fontcraft;
     text-transform: uppercase;
@@ -69,7 +82,7 @@ p{
     text-align: center;
     padding: 0 5vw 0 5vw;
     margin: 0;
-    color: #F8F9FA;
+    /* color: #F8F9FA; */
     transition: .5s;
 }
 
@@ -85,7 +98,7 @@ p{
 }
 
 #Logo{
-    margin: 0 2.5vw 0 2.5vw;
+    margin: 6px 2.5vw 6px 2.5vw;
     padding: 0;
     width: 4em;
     height: auto;
@@ -112,7 +125,7 @@ p{
     width: 100%;
     margin-bottom: 60px;
     /*background-image: url("../header.jpg"); */
-    /* background-color: black; */
+    /* background-color: #0B0A07; */
 }
 
 
@@ -146,11 +159,14 @@ p{
 
 #about{
     background-color: #FFF;
+    height: 100vh;
 }
 
 .slogan{
+  padding-top: 10vh;
   width: 100%;
   text-align: center;
+  background-color: #fff;
 }
 
 #view2{
@@ -163,7 +179,7 @@ p{
 }
 
 #view2 h1{
-    padding-top: 9%;
+    padding-top: 11%;
     text-align: center;
     font-family: Fontcraft;
     font-size: 4em;
@@ -173,6 +189,7 @@ p{
     height: 110vh;
     width: 100%;
     background-color: #FFF;
+    padding-top: 15vh;
     /* background-color: red; */
 }
 
@@ -181,7 +198,7 @@ p{
 }
 
 #attractions h1{
-    padding-top: 8%;
+    padding-top: 5.5%;
     text-align: center;
     font-family: Fontcraft;
     font-size: 4em;
@@ -207,6 +224,12 @@ p{
     height: 100vh;
     width: 100%;
     background-color: #FFF;
+    text-align: center;
+    overflow: hidden;
+}
+#food h1{
+  padding-top: 5.5%;
+  font-size: 4em;
 }
 
 #mapping{
@@ -219,7 +242,7 @@ p{
     height: 80vh;
     margin: 0 30px 0 30px;
     width: 30%;
-    background-color: black;
+    background-color: #0B0A07;
     transition: .5s;
 }
 
@@ -239,7 +262,7 @@ p{
     height: 50px;
     margin-top: 15px;
     background-color: transparent;
-    color: black;
+    color: #0B0A07;
     border: 3px solid #fff;
     float: left;
     color: #F7F7F7;
@@ -247,7 +270,7 @@ p{
 }
 
 .button5:hover{
-  color: black;
+  color: #0B0A07;
   background-color: #F3A712;
   border: 3px solid #F3A712;
 }
@@ -255,7 +278,7 @@ p{
 .att-img{
     width: 100%;
     height: 100%;
-    background-color:black;
+    background-color:#0B0A07;
 }
 
 .att-img img{
@@ -366,16 +389,157 @@ p{
     transition: .5s;
 }
 
-
-.footer{
-    height: 30vh;
-    width: 100%;
-    background-color: #1D1F20;
-    color: #FAFBFC;
-    font-family: ItalianBreakfast;
+.next{
+  width: 20%;
+  font-size: 1.5em;
+  height: 50px;
+  margin-top: 15px;
+  background-color: transparent;
+  color: #0B0A07;
+  border: 2px solid #F3A712;
+  float: left;
+  transition: .5s;
+  cursor: pointer;
+}
+.next:hover{
+  color: white;
+  background-color:#F3A712;
+}
+.butto{
+  transform: translateX(30vw);
+  width: 100vw;
+  height: 9vh;
+  padding-top: 14vh;
+  padding-bottom: 10vh;
+}
+.active{
+  color: white;
+  background-color:#F3A712;
+}
+.menu{
+  width: 3840px;
+  height: 72vh;
+  display: flex;
+  background-color: #fff;
+  transition: .7s ease;
+}
+.dish{
+  transform: translateX(2.5vw);
+  width: 1800px;
+  height: 100%;
+  display: flex;
+}
+.discb{
+  opacity: 0;
+  transition: .3s;
+}
+.dish h1{
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  padding: 0 20px 0 20px;
+  color: white;
+}
+.dish img{
+  height: 100%;
+  width:auto;
+  z-index: -1;
+}
+.dish_menu{
+  /* background-color: red; */
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+.dish p{
+  z-index: 20;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  padding: 0 20px 0 20px;
+  color: white;
+  font-size: 150%;
+}
+#dish1{
+  transform: translateY(2vh);
+  background-color: #0B0A07;
+}
+#dish2{
+  transform: translateY(2vh);
+  background-color: #0B0A07;
+}
+#dish3{
+  transform: translateY(2vh);
+  background-color: #0B0A07;
 }
 
-.footer h1{
+.menu img{
+  transition: .3s;
+}
+
+.dessert{
+  transform: translateX(10vw);
+  width: 1800px;
+  height: 99.5%;
+  display: flex;
+  background-color: #fff;
+}
+.dessert img{
+  height: 100%;
+  width:auto;
+  z-index: -1;
+}
+.dessert h1{
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  padding: 0 20px 0 20px;
+  color: white;
+}
+.dessert p{
+  z-index: 20;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  padding: 0 20px 0 20px;
+  color: white;
+  font-size: 150%;
+}
+.footer{
+    height: 100vh;
+    width: 100%;
+    background-color: #F8F9FA;
+    color: #FAFBFC;
+    font-family: ItalianBreakfast;
+    overflow: hidden;
+    display: flex;
+}
+
+.person{
+  width: 50%;
+  text-align: center;
+  padding: 30px;
+  transform: scale(.5);
+}
+.developer{
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.thanks{
+  width: 100%;
+  height: auto;
+}
+
+.footer h1, p{
     text-align: center;
-    line-height: 10vh;
+    color:#0B0A07;
+    font-family: Fontcraft;
+    margin: 0;
+}
+.footer p{
+    color:#4D4C4A;
+    opacity: .8;
 }
